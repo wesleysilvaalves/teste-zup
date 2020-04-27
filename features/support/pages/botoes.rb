@@ -6,11 +6,15 @@ class Botoes
      end
 
      def clicar_produto
-        (all('.WrapperPicture-sc-9rtsvr-2.iGANWj.ViewUI-sc-1ijittn-6.iXIDWU', wait: 10 )[0]).click  
+        #(all('.WrapperPicture-sc-9rtsvr-2.iGANWj.ViewUI-sc-1ijittn-6.iXIDWU', wait: 10 )[0]).click  
+        find(:xpath, "(//h2[contains(text(), 'Galaxy')])[1]").click
+        
      end
 
      def clicar_comprar
-        find('.TextUI-sc-1i9za0i-4.fCwXAM.TextUI-sc-12tokcy-0.kYUvL', wait: 10).click
+       # find('.TextUI-sc-1i9za0i-4.fCwXAM.TextUI-sc-12tokcy-0.kYUvL', wait: 10).click
+        find(:xpath, "//a[@id='btn-buy']").click
+        
      end   
     
 
